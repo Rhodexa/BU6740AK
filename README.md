@@ -6,7 +6,7 @@ Other people have already done a huge part of the work:
 - https://cocus.rf.gd/2017/05/04/hp-3550-glcd-hack/
 - https://kbiva.wordpress.com/2013/04/19/hp-color-laserjet-1600-front-panel/
 ---
-This is my take, with pinouts and headaches. My board uses a different display, so I tried to understand the IC better in orther to properly use it.
+This is my take, with pinouts and headaches. My board uses a different display, so I tried to understand the IC better in order to properly use it.
 
 ## Pinout
 ![screenshot](BU6740.png)

@@ -23,5 +23,24 @@ The LCD address seems to be anything between
 | 42 | O | LCD A0 | Command/Data select input. Pulses HIGH when using the Data address |
 | 43 | O | LCD RST | Resets the LCD. Pulses when the address is between $A000-$AFFF |
 
+# LEDs
+There are two output ports you can use:
+Pins 9, 10, 11, 12 are Open Drain outupts. Pressumably these can sink more current and are probably meant to drive LEDs.
+These can be accessed using address $90x0 where 'x' bits correspond to a pin.
+x = [Pin 9, 10, 11, 12]
+
+# Push-Pull outputs
+Pins 14, 15, 16, 17 are Push-Pull outputs. These probably can't drive much current. My particular board uses Pin 17
+together with a transistor to drive a backlight for the GLCD.
+These can be accessed via $900x
+
 # Buttons
-Insterestingly, the chip actually has an active button matrix scanner module.
+Insterestingly, the chip actually has an active, 4x8 button matrix scanner module.
+- Pins 33, 34, 35 and 36 are the scanning outputs.
+- Pins 18 to 25 are the inputs/returns from the keyboard matrix.
+
+The chip stores the keys in a buffer. 
+
+# Oscillator
+The chip has an internal oscillator, which speed can be set by tweaking the resistor between pins 1 and 2.
+This oscillator runs the kayboard scanner and also the timing of the LCD

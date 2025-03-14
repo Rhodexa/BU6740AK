@@ -20,4 +20,4 @@ The LCD address seems to be anything between
 | 40 | O | LCD /CS | Pulses LOW when writing to LCD |
 | 41 | O | LCD Latch | Pulses HIGH when writting to LCD |
 | 42 | O | LCD A0 | Command/Data select input. Pulses HIGH when using the Data address |
-| 43 | O | LCD RST | Resets the display. Pulses when the address is between $A000-$AFFF |
+| 43 | O | LCD RST | Resets the LCD. Pulses when the address is between $A000-$AFFF |

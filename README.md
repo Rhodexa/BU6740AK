@@ -11,6 +11,7 @@ This is my take, with pinouts and headaches. My board uses a different display, 
 ## Pinout
 ![screenshot](BU6740.png)
 
+## LCD
 The LCD address seems to be anything between
 - $1000-$3000 (Command Write)
 - $5000-7000 (Data Write)
@@ -21,3 +22,6 @@ The LCD address seems to be anything between
 | 41 | O | LCD Latch | Pulses HIGH when writting to LCD |
 | 42 | O | LCD A0 | Command/Data select input. Pulses HIGH when using the Data address |
 | 43 | O | LCD RST | Resets the LCD. Pulses when the address is between $A000-$AFFF |
+
+# Buttons
+Insterestingly, the chip actually has an active button matrix scanner module.

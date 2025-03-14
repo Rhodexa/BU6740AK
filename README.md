@@ -9,4 +9,4 @@ Other people have already done a huge part of the work:
 This is my take, with pinouts and headaches. My board uses a different display, so I tried to understand the IC better in orther to properly use it.
 
 ## Pinout
-![alt text]([http://url/to/img.png](https://github.com/Rhodexa/BU6740AK/blob/main/BU6740.png))
+![screenshot](BU6740.png)
